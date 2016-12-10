@@ -23,11 +23,23 @@
 
 /* Begin PBXBuildFile section */
 		24DD6CF91134B3F500162E58 /* RsRbtSnappyModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* RsRbtSnappyModule.h */; };
-		24DD6CFA1134B3F500162E58 /* RsRbtSnappyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.m */; };
+		24DD6CFA1134B3F500162E58 /* RsRbtSnappyModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.mm */; };
 		24DE9E1111C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* RsRbtSnappy_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* RsRbtSnappy_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B3D425C41DFC95B4000777EA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425B61DFC95B4000777EA /* config.h */; };
+		B3D425C61DFC95B4000777EA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B3D425B81DFC95B4000777EA /* README.md */; };
+		B3D425C71DFC95B4000777EA /* snappy-c.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3D425B91DFC95B4000777EA /* snappy-c.cc */; };
+		B3D425C81DFC95B4000777EA /* snappy-c.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425BA1DFC95B4000777EA /* snappy-c.h */; };
+		B3D425C91DFC95B4000777EA /* snappy-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425BB1DFC95B4000777EA /* snappy-internal.h */; };
+		B3D425CA1DFC95B4000777EA /* snappy-sinksource.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3D425BC1DFC95B4000777EA /* snappy-sinksource.cc */; };
+		B3D425CB1DFC95B4000777EA /* snappy-sinksource.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425BD1DFC95B4000777EA /* snappy-sinksource.h */; };
+		B3D425CC1DFC95B4000777EA /* snappy-stubs-internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3D425BE1DFC95B4000777EA /* snappy-stubs-internal.cc */; };
+		B3D425CD1DFC95B4000777EA /* snappy-stubs-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425BF1DFC95B4000777EA /* snappy-stubs-internal.h */; };
+		B3D425CE1DFC95B4000777EA /* snappy-stubs-public.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425C01DFC95B4000777EA /* snappy-stubs-public.h */; };
+		B3D425CF1DFC95B4000777EA /* snappy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3D425C11DFC95B4000777EA /* snappy.cc */; };
+		B3D425D01DFC95B4000777EA /* snappy.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D425C21DFC95B4000777EA /* snappy.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +53,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* RsRbtSnappyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RsRbtSnappyModule.h"; path = "Classes/RsRbtSnappyModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RsRbtSnappyModule.m"; path = "Classes/RsRbtSnappyModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* RsRbtSnappyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RsRbtSnappyModule.h; path = Classes/RsRbtSnappyModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RsRbtSnappyModule.mm; path = Classes/RsRbtSnappyModule.mm; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RsRbtSnappyModuleAssets.h"; path = "Classes/RsRbtSnappyModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RsRbtSnappyModuleAssets.m"; path = "Classes/RsRbtSnappyModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* RsRbtSnappy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RsRbtSnappy_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RsRbtSnappyModuleAssets.h; path = Classes/RsRbtSnappyModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RsRbtSnappyModuleAssets.m; path = Classes/RsRbtSnappyModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* RsRbtSnappy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsRbtSnappy_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* librs.rbt.snappy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "librs.rbt.snappy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D425B61DFC95B4000777EA /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B3D425B81DFC95B4000777EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3D425B91DFC95B4000777EA /* snappy-c.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-c.cc"; sourceTree = "<group>"; };
+		B3D425BA1DFC95B4000777EA /* snappy-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-c.h"; sourceTree = "<group>"; };
+		B3D425BB1DFC95B4000777EA /* snappy-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-internal.h"; sourceTree = "<group>"; };
+		B3D425BC1DFC95B4000777EA /* snappy-sinksource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-sinksource.cc"; sourceTree = "<group>"; };
+		B3D425BD1DFC95B4000777EA /* snappy-sinksource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-sinksource.h"; sourceTree = "<group>"; };
+		B3D425BE1DFC95B4000777EA /* snappy-stubs-internal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-stubs-internal.cc"; sourceTree = "<group>"; };
+		B3D425BF1DFC95B4000777EA /* snappy-stubs-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-internal.h"; sourceTree = "<group>"; };
+		B3D425C01DFC95B4000777EA /* snappy-stubs-public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-public.h"; sourceTree = "<group>"; };
+		B3D425C11DFC95B4000777EA /* snappy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy.cc; sourceTree = "<group>"; };
+		B3D425C21DFC95B4000777EA /* snappy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snappy.h; sourceTree = "<group>"; };
+		B3D425C31DFC95B4000777EA /* version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* librs.rbt.snappy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librs.rbt.snappy.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +99,7 @@
 		0867D691FE84028FC02AAC07 /* Snappy iOS Module */ = {
 			isa = PBXGroup;
 			children = (
+				B3D425B41DFC95B4000777EA /* snappy-ios */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -96,7 +122,7 @@
 				24DE9E0F11C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* RsRbtSnappyModule.h */,
-				24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.m */,
+				24DD6CF81134B3F500162E58 /* RsRbtSnappyModule.mm */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -110,6 +136,26 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		B3D425B41DFC95B4000777EA /* snappy-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B3D425B61DFC95B4000777EA /* config.h */,
+				B3D425B81DFC95B4000777EA /* README.md */,
+				B3D425B91DFC95B4000777EA /* snappy-c.cc */,
+				B3D425BA1DFC95B4000777EA /* snappy-c.h */,
+				B3D425BB1DFC95B4000777EA /* snappy-internal.h */,
+				B3D425BC1DFC95B4000777EA /* snappy-sinksource.cc */,
+				B3D425BD1DFC95B4000777EA /* snappy-sinksource.h */,
+				B3D425BE1DFC95B4000777EA /* snappy-stubs-internal.cc */,
+				B3D425BF1DFC95B4000777EA /* snappy-stubs-internal.h */,
+				B3D425C01DFC95B4000777EA /* snappy-stubs-public.h */,
+				B3D425C11DFC95B4000777EA /* snappy.cc */,
+				B3D425C21DFC95B4000777EA /* snappy.h */,
+				B3D425C31DFC95B4000777EA /* version */,
+			);
+			path = "snappy-ios";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -117,9 +163,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D425CD1DFC95B4000777EA /* snappy-stubs-internal.h in Headers */,
+				B3D425C41DFC95B4000777EA /* config.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* RsRbtSnappy_Prefix.pch in Headers */,
+				B3D425C81DFC95B4000777EA /* snappy-c.h in Headers */,
 				24DD6CF91134B3F500162E58 /* RsRbtSnappyModule.h in Headers */,
+				B3D425D01DFC95B4000777EA /* snappy.h in Headers */,
+				B3D425CE1DFC95B4000777EA /* snappy-stubs-public.h in Headers */,
+				B3D425C91DFC95B4000777EA /* snappy-internal.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* RsRbtSnappyModuleAssets.h in Headers */,
+				B3D425CB1DFC95B4000777EA /* snappy-sinksource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DD6CFA1134B3F500162E58 /* RsRbtSnappyModule.m in Sources */,
+				B3D425CF1DFC95B4000777EA /* snappy.cc in Sources */,
+				B3D425C71DFC95B4000777EA /* snappy-c.cc in Sources */,
+				24DD6CFA1134B3F500162E58 /* RsRbtSnappyModule.mm in Sources */,
+				B3D425C61DFC95B4000777EA /* README.md in Sources */,
+				B3D425CA1DFC95B4000777EA /* snappy-sinksource.cc in Sources */,
 				24DE9E1211C5FE74003F90F6 /* RsRbtSnappyModuleAssets.m in Sources */,
+				B3D425CC1DFC95B4000777EA /* snappy-stubs-internal.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +273,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/RsRbtSnappy.dst";
+				DSTROOT = /tmp/RsRbtSnappy.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RsRbtSnappy_Prefix.pch";
+				GCC_PREFIX_HEADER = RsRbtSnappy_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -239,7 +297,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "rs.rbt.snappy";
+				PRODUCT_NAME = rs.rbt.snappy;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -253,11 +311,11 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/RsRbtSnappy.dst";
+				DSTROOT = /tmp/RsRbtSnappy.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RsRbtSnappy_Prefix.pch";
+				GCC_PREFIX_HEADER = RsRbtSnappy_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -274,7 +332,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "rs.rbt.snappy";
+				PRODUCT_NAME = rs.rbt.snappy;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -288,11 +346,11 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/RsRbtSnappy.dst";
+				DSTROOT = /tmp/RsRbtSnappy.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RsRbtSnappy_Prefix.pch";
+				GCC_PREFIX_HEADER = RsRbtSnappy_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -311,7 +369,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "rs.rbt.snappy";
+				PRODUCT_NAME = rs.rbt.snappy;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -326,11 +384,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LIBRARY = "libstdc++";
-				DSTROOT = "/tmp/RsRbtSnappy.dst";
+				DSTROOT = /tmp/RsRbtSnappy.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RsRbtSnappy_Prefix.pch";
+				GCC_PREFIX_HEADER = RsRbtSnappy_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -346,7 +404,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "rs.rbt.snappy";
+				PRODUCT_NAME = rs.rbt.snappy;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
