@@ -9,6 +9,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#include "snappy.h"
 
 @implementation RsRbtSnappyModule
 
