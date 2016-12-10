@@ -68,9 +68,9 @@ REGISTER YOUR MODULE
 Register your module with your application by editing `tiapp.xml` and adding your module.
 Example:
 
-<modules>
-	<module version="0.1">rs.rbt.snappy</module>
-</modules>
+	<modules>
+		<module version="0.1">rs.rbt.snappy</module>
+	</modules>
 
 When you run your project, the compiler will combine your module along with its dependencies
 and assets into the application.
