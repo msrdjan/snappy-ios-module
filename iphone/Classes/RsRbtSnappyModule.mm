@@ -88,21 +88,83 @@
 
 #pragma Public APIs
 
--(id)example:(id)args
+-(id)compressToBase64String:(id)args
 {
-	// example method
-	return @"hello world";
+    enum Args {
+        kArgString = 0,
+        kArgCount
+    };
+    
+    ENSURE_ARG_COUNT(args, kArgCount);
+    
+    id inputString = [args objectAtIndex:kArgString];
+    ENSURE_TYPE(inputString, NSString);
+    
+//    NSLog(@"[INFO] input string %@", inputString);
+    NSData* inputData = [inputString dataUsingEncoding:NSUTF8StringEncoding];
+//    NSLog(@"[INFO] input data %@", inputData);
+    
+    NSData *outputData = [NSData data];
+    if ([inputData length] > 0)
+    {
+        const char *input = (const char *)[inputData bytes];
+        size_t input_length = [inputString length];
+//        NSLog(@"[INFO] input length %d", input_length);
+        
+        char* output = new char[snappy::MaxCompressedLength(input_length)];
+        size_t output_length;
+        
+        snappy::RawCompress(input, input_length, output, &output_length);
+//        NSLog(@"[INFO] output length %d", output_length);
+        
+        outputData = [NSData dataWithBytes:(const void *)output length:output_length];
+    }
+//    NSLog(@"[INFO] output data %@", outputData);
+    
+    NSString *base64String = [outputData base64EncodedStringWithOptions:0];
+//    NSLog(@"[INFO] output base64 string %@", base64String);
+    
+    return base64String;
 }
 
--(id)exampleProp
+-(id)uncompressFromBase64String:(id)args
 {
-	// example property getter
-	return @"hello world";
-}
-
--(void)setExampleProp:(id)value
-{
-	// example property setter
+    enum Args {
+        kArgString = 0,
+        kArgCount
+    };
+    
+    ENSURE_ARG_COUNT(args, kArgCount);
+    
+    id inputString = [args objectAtIndex:kArgString];
+    ENSURE_TYPE(inputString, NSString);
+    
+//    NSLog(@"[INFO] input string %@", inputString);
+    NSData *inputData = [[NSData alloc] initWithBase64EncodedString:inputString options:0];
+//    NSLog(@"[INFO] input data %@", inputData);
+    
+    NSData *outputData = [NSData data];
+    if ([inputData length] > 0)
+    {
+        const char *input = (const char *)[inputData bytes];
+        size_t input_length = [inputString length];
+//        NSLog(@"[INFO] input length %d", input_length);
+        
+        size_t output_length;
+        snappy::GetUncompressedLength(input, input_length, &output_length);
+        char* output = new char[output_length];
+        
+        snappy::RawUncompress(input, input_length, output);
+//        NSLog(@"[INFO] output length %d", output_length);
+        
+        outputData = [NSData dataWithBytes:(const void *)output length:output_length];
+    }
+//    NSLog(@"[INFO] output data %@", outputData);
+    
+    NSString *decodedString = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
+//    NSLog(@"[INFO] output decoded string %@", decodedString);
+    
+    return decodedString;
 }
 
 @end
