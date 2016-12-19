@@ -108,7 +108,7 @@
     if ([inputData length] > 0)
     {
         const char *input = (const char *)[inputData bytes];
-        size_t input_length = [inputString length];
+        size_t input_length = [inputData length];
 //        NSLog(@"[INFO] input length %d", input_length);
         
         char* output = new char[snappy::MaxCompressedLength(input_length)];
@@ -147,7 +147,7 @@
     if ([inputData length] > 0)
     {
         const char *input = (const char *)[inputData bytes];
-        size_t input_length = [inputString length];
+        size_t input_length = [inputData length];
 //        NSLog(@"[INFO] input length %d", input_length);
         
         size_t output_length;

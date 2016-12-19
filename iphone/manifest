@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 1.0.1
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: Snappy iOS Module
@@ -15,4 +15,4 @@ name: Snappy iOS Module
 moduleid: rs.rbt.snappy
 guid: b7a7c873-6cf8-4a69-8fec-f7163b5ccd06
 platform: iphone
-minsdk: 6.0.0.GA
+minsdk: 5.3.0.GA
